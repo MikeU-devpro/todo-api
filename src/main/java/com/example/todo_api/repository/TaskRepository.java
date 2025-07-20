@@ -7,10 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository // Marks this interface as a Spring Data JPA repository
+@Repository
 public interface TaskRepository extends JpaRepository<Task, Long> {
 
-    // Custom query method to find tasks by status
     List<Task> findByStatus(TaskStatus status);
 }
 

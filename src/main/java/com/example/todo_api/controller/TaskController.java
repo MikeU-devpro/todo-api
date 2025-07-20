@@ -70,7 +70,7 @@ public class TaskController {
             @ApiResponse(responseCode = "404", description = "Task not found"),
             @ApiResponse(responseCode = "400", description = "Invalid task data provided")
     })
-    @PutMapping("/{id}") // Handles PUT requests to /api/tasks/{id}
+    @PutMapping("/{id}")
     public ResponseEntity<Task> updateTask(
             @Parameter(description = "ID of the task to update", example = "1")
             @PathVariable Long id,
@@ -90,7 +90,7 @@ public class TaskController {
             @Parameter(description = "ID of the task to delete", example = "1")
             @PathVariable Long id) {
         if (taskService.deleteTask(id)) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT); // 204 No Content
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }

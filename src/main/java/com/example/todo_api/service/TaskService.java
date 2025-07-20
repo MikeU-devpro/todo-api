@@ -52,6 +52,6 @@ public class TaskService {
             taskRepository.deleteById(id);
             return true;
         }
-        return false; // Task not found
+        return false;
     }
 }
