@@ -90,8 +90,7 @@ Here you can view all the API endpoints, their details, and test them directly t
 
 For a visual reference, here's what the Swagger UI looks like:
 
-![Swagger UI Screenshot](docs/images/swagger-ui-screenshot.png) # Make sure this path is correct!
-
+![Swagger UI Screenshot](docs/images/swagger-ui-screenshot.png)
 ## Troubleshooting Database Connection Issues
 
 If you encounter errors when trying to run the Spring Boot API, especially related to database connection, here are common issues and their solutions:
